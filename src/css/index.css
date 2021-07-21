@@ -30,22 +30,26 @@ div.gallery div{
 }
 .leftdiv{
     left: 6px;
-    background-color:greenyellow;
-    width: 15%;
+    background-color:green;
+    width: 14%;
 }
 
 .rightdiv{
     right: 5px;
-    width: 85%;
-    background-color: cadetblue;
+    width: 86%;
+    background-color:white;
 }
 nav a {
     display: inline-block;
     font-family: sans-serif;
     color:white;
 }
-h1 { font-family: sans-serif; color:white; }
-
+h2 { font-family: sans-serif; color:white; }
+h3 { font-family: sans-serif; color:blue; }
+p{
+    color:brown;
+    font-family:"Times New Roman";
+}
 .fixed-header{
     width: 100%;
     position: fixed;

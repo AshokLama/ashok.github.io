@@ -2,7 +2,8 @@ html {
     height: 100%;
 }
 body {
-    background-color: rgb(250, 0, 80);
+
+    background-image: url("../images/Recipeimg.jpg");
 }
 h2 {
     color: mediumslateblue;
@@ -12,11 +13,11 @@ h3 {
 color: mediumslateblue;
 }
 p{
-    color:white;
+    color:black;
 }
 ol{
-    color: white;
+    color: black;
 }
 ul{
-    color: white;
+    color: black;
 }

@@ -1,0 +1,39 @@
+.body{
+  background-color: cadetblue;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.split {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.fixed-footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+h1{
+    color: green;
+}

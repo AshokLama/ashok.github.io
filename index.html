@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 <head>
-    <title> Assignment</title>
+  <title> Assignment</title>
+  <link href="src/index.css" rel="stylesheet"/>
 </head>
+
 <body>
-<img src="src/images/img.jpg" alt="ashok" width="104" height="130" >
-<p>Ashok Lama</p>
-<ul>
-    <li>W1D1-This homepage</li>
-    <li>W1D2-About me</li>
-    <li>W1D3-ReCipe</li>
-    <li>W1D4-Movie Review</li>
-    <li>W1D5-MP3 </li>
-    <li>W1D6-Movie Review PHP</li>
-</ul>
-<p>
-  <a href="https://validator.w3.org/nu/?doc=https://ashoklama.github.io/ashok.github.io/index">
- <img src="https://manalabs.org/img/w3c-html.png" alt = "image">
-</a>
-</p>
+<div class="fixed-header">
+<div class="gallery">
+  <a target="_blank" href="src/images/img.jpg">
+    <img src="src/images/img.jpg" alt="ashok" width="104" height="130">
+  </a>
+  <div class="desc">Ashok Lama</br> 612753</div>
+</div>
+</div>
+<div class=" split leftdiv">
+  <nav>
+    <h1>My Assignment:</h1>
+    <a href="src/pages/Home.html" target="targetframe1"> Home </a><br>
+    <a href="src/pages/AboutMe.html" target="targetframe2">About ME</a><br>
+    <a href="src/pages/Recipe.html" target="targetframe3">Recipe</a><br>
+    <a href="src/pages/MovieReview.html" target="targetframe4">Movie Review</a><br>
+    <a href="pages/MP" target="targetframe5">MP3 Library</a><br>
+  </nav>
+</div>
+<div class= "split rightdiv">
+  <h1>Welcome</h1>
+  <p>Hello there! My name is Ashok Lama, and I am from Nepal.I'd like to extend a warm welcome to everyone who visits my personal blog. You'll discover a variety of items relating to me on this page. You may find all of my CS472 assignment work on this page (web application development).
+    To access the resources, click on the various tabs on the sidebar. Thank you very much!
+  </p>
+</div>
+
+<div class="fixed-footer">
+  <p>
+    <a href="https://validator.w3.org/nu/?doc=https://ashoklama.github.io/ashok.github.io/index">
+      <img src="https://manalabs.org/img/w3c-html.png" alt="image">
+    </a>
+  </p>
+  <div class="container">Copyright &copy; 2021 All rights reserved.<br>
+    Powered By :Ashok Lama
+  </div>
+</div>
 </body>
 </html>

@@ -1,6 +1,62 @@
-.center {
+
+div.gallery img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 18%;
+    border-radius: 50%;
+}
+div.gallery div{
+    color: black;
+    text-align: center;
+}
+
+.fixed-header{
+    height: 25%;
+    width: 100%;
+    position: fixed;
+    background:sandybrown;
+    padding: 10px;
+
+}
+.split {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.leftdiv{
+    left: 6px;
+    background-color:greenyellow;
+    width: 15%;
+}
+
+.rightdiv{
+    right: 5px;
+    width: 85%;
+    background-color: cadetblue;
+}
+nav a {
+    display: inline-block;
+    font-family: sans-serif;
+    color:white;
+}
+h1 { font-family: sans-serif; color:white; }
+
+.fixed-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.fixed-footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+container{
+
 }

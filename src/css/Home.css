@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: rgb(10, 0, 290);
+}
+h2 {
+    color: mediumslateblue;
+    text-align: center;
+}
+h3 {
+    color: mediumslateblue;
+}
+p{
+    color:black;
+}

@@ -15,19 +15,27 @@ body {
     height: 50px;
 }
 .footerDiv{
-    width: 100%;
-    bottom: 0;
-    float: right;
-}
-h1{
+    grid-area: footer;
+    background: #A2B964;
     text-align: center;
 }
+h1{
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
 .mainDiv{
-    overflow: hidden;
+    display: grid;
     width: 800px;
-    border: 4px solid gray;
     margin: auto;
+    border: 4px gray solid;
     border-radius: 20px;
+    overflow: hidden;
+    grid-template-columns: 550px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:'left right'
+        'footer footer';
 }
 .leftBar{
     position: absolute;
@@ -35,12 +43,14 @@ h1{
     float: left;
     padding: 0px;
     margin: 0px;
+    grid-area: left;
 }
 .rightBar{
     width: 250px;
     float: right;
     padding: 0px;
     margin: 0px;
+    grid-area: right;
     background:#A2B964;
 
 }
@@ -148,5 +158,11 @@ color: red;
     margin: 0;
 }
 .rightBar dt{
-
+    font-weight: bold;
+    margin-top: 10pt;
+}
+.rightBar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+}
+body {
+    text-align: center;
+    background-image:url("../images/background.png");
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.headerDiv{
+    position:relative;
+    background:url("../images/bannerbg.png") repeat-x;
+    height: 50px;
+}
+.footerDiv{
+    width: 100%;
+    bottom: 0;
+    float: right;
+}
+h1{
+    text-align: center;
+}
+.mainDiv{
+    overflow: hidden;
+    width: 800px;
+    border: 4px solid gray;
+    margin: auto;
+    border-radius: 20px;
+}
+.leftBar{
+    position: absolute;
+    width: 550px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.rightBar{
+    width: 250px;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    background:#A2B964;
+
+}
+.leftTop{
+    background-image: url("../images/bannerbg.png");
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+.leftTop img{
+    /*width: 550px;*/
+    height: 83px;
+    float: left;
+    margin-right: 5px;
+
+}
+.leftTop p{
+color: red;
+
+}
+.review-block{
+    width: 250px; float: left;
+}
+.review-blockRight{
+    width: 250px; float: left;
+}
+.review-block p img{
+    float: left; margin-right: 5px;
+}
+.review-blockRight p img{
+    float: right; margin-right: 5px;
+}
+.leftContainerfisrtrow{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+
+.leftContainersecondrow{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerthirdrow{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerforthrow{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerfiftherow{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerfirstrowRight{
+    border: gray solid;
+    border-radius:10px;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainersecondrowRight{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerthirdrowRight{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerforthrowRight{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.leftContainerfifthrowRight{
+    border: gray solid;
+    border-radius:10px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+.rightBar dl{
+    padding: 10pt;
+    margin: 0;
+}
+.rightBar dt{
+
+}

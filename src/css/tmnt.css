@@ -1,0 +1,127 @@
+body {
+    margin:0;
+    background-image: url('../images/background.png');
+    font-family: Tahoma, Verdana, sans-serif;
+}
+#header {
+    text-align: center;
+    background: url('../images/bannerbg.png') repeat-x;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.main{
+    display: grid;
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    border-radius: 20px;
+    overflow: hidden;
+    grid-template-columns: 550px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        'left right'
+        'footer footer';
+}
+
+#right {
+    grid-area: right;
+    width: 250px;
+    background: #A2B964;
+}
+
+#left {
+    grid-area: left;
+    width: 550px;
+}
+
+#left-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 48pt;
+    color: red;
+    background: url('../images/rbg.png') repeat-x 83px;
+}
+
+#left-header img {
+    height: 83px;
+}
+
+#footer {
+    grid-area: footer;
+    background: #A2B964;
+    text-align: center;
+}
+
+
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 2%;
+}
+
+.review {
+    display: block;
+    width: 47%;
+    font-size: 8pt;
+    margin-bottom: 20pt;
+}
+
+.review >p:first-child {
+    font-weight: bold;
+    padding: 8px;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    min-height: 25px;
+}
+.review >p:first-child > img {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+.review >p:last-child > img {
+    float: left;
+    margin-right: 5px;
+}
+.reviewer-pub {
+    font-style: italic;
+}
+
+
+#right {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+#right dl {
+    padding: 10pt;
+    margin: 0;
+}
+#right dt {
+    font-weight: bold;
+    margin-top: 10pt;
+}
+
+#right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer p {
+    margin: 5px;
+}
+
+.validate {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+}

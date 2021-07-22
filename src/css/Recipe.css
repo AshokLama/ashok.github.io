@@ -3,7 +3,7 @@ html {
 }
 body {
 
-    background-image: url("../images/Recipeimg.jpg");
+    background-image: url("../images/silverware.jpg");
 }
 h2 {
     color: mediumslateblue;
@@ -20,4 +20,11 @@ ol{
 }
 ul{
     color: black;
+}
+blockquote {
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+.split6{
+color: #A2B964;
 }

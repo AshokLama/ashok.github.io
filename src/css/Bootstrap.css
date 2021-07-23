@@ -1,0 +1,43 @@
+header, footer{
+    background-color: #ADD8E6;
+}
+
+nav{
+    background-color: #2F4F4F;
+}
+nav ul li{
+    border-right: 2px solid black;
+}
+
+section{
+    height: 60vh;
+}
+
+section div:first-child{
+    background-color: #AAAAAA;
+}
+section div:nth-child(2){
+    background-color: #BBBBBB;
+}
+section div:last-child{
+    background-color: #CCCCCC;
+}
+
+/* resposive media queries */
+@media screen and ( max-width : 600px ) {
+    .section-div{
+        flex-wrap: wrap;
+    }
+    .section-div div:first-child, .section-div div:last-child{
+        width: 50%; padding: 2%;
+    }
+    .section-div div:nth-child(2){
+        width: 100%; order: 3; padding: 2%;
+    }
+    header{
+        padding: 2%;
+    }
+    footer{
+        padding: 4%;
+    }
+}

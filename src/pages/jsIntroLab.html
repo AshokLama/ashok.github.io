@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+
+    /* runs test to see if expected argument is === to value returned by function2test argument */
+    function myFunctionTest(expected, found) {
+      if (expected === found) {
+        return "TEST SUCCEEDED";
+      } else {
+        return "TEST FAILED.  Expected " + expected + " found " + found;
+      }
+    }
+
+    /* run and test for array which are equal or not*/
+    function myFunctionForArray(expected, found) {
+      let flag = false;
+      for (e in expected) {
+        for (f in found) {
+          if (expected[e] === found[f]) {
+            flag = true;
+          }
+        }
+        if (flag === false) {
+          return "TEST FAILED.  Expected " + expected[e] + " found " + found[f];
+        }
+      }
+      return "TEST SUCCEEDED";
+    }
+
+    /*Q1 max returns the maximum of 2 arguments */
+    function max(a, b) {
+      if (a > b) {
+        return a;
+      } else {
+        return b;
+      }
+      ;
+    }
+
+    /*Q2 max3 takes 3 numbers as arguments and returns the largest */
+    function maxOfThree(a, b, c) {
+      return max(max(a, b), c);
+
+    }
+
+    /* Q3 check for vowel*/
+    function isVowel(c) {
+      const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+      let flag = false;
+      for (const i in vowels) {
+        if (vowels[i] === c) {
+          flag = true;
+        }
+      }
+      return flag;
+    }
+
+    /*Q4 sum of the arr*/
+    function sum(arr) {
+      return arr.reduce((x, y) => x + y, 0);
+    }
+
+    /*Q4 multiplication of the arr*/
+    function mul(arr) {
+      return arr.reduce((x, y) => x * y, 1);
+    }
+
+    /*Q5 string reverse*/
+    function reverseString(str) {
+      return str.split("").reverse().join("");
+    }
+
+    /*Q5 find length of longest word*/
+    function findLongestWord(words) {
+      let maxLength = 0;
+
+      for (const i in words) {
+        maxLength = max(maxLength, words[i].length);
+      }
+      return maxLength;
+    }
+
+    /*Q6finding long words than given length*/
+    function  filterLongWords(words, length) {
+      const longWords = [];
+      let j = 0;
+      for (const i in words) {
+        if (words[i].length > length) {
+          longWords[j] = words[i];
+          j++
+        }
+      }
+      return longWords;
+    }
+
+    console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+    console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, maxOfThree(55, 4, 44)));
+    console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, maxOfThree(55, 4, 44)));
+
+
+    console.log("Excepted output of isVowel(a) is true  " + myFunctionTest(true, isVowel('a')));
+    console.log("Excepted output of isVowel(I) is true  " + myFunctionTest(true, isVowel('I')));
+
+    const arr1 = [1, 2, 3, 4];
+    console.log("Excepted output of sum(arr) is 10 " + myFunctionTest(10, sum(arr1)));
+    console.log("Excepted output of mul(arr) is 24 " + myFunctionTest(24, mul(arr1)));
+
+    console.log("Excepted output of reverseString(\"ashok\") is kohsa " + myFunctionTest('kohsa', reverseString('ashok')));
+
+    const strArray1 = ['Ashok', 'Lama', 'Ramshing', 'Rai'];
+    console.log("Excepted output of longestWord(strArray) is Ramshing with wordLength 8 " + myFunctionTest(8, findLongestWord(strArray1)));
+
+    let arrCheck = ['Lama', 'Ramshing'];
+    console.log("Excepted output of filterLongWords(strArray, 3) are arr[Lama, Ramshing] " + myFunctionForArray(arrCheck, filterLongWords(strArray1, 3)));
+
+
+    console.assert(isVowel("A"), "Expected output of isVowel('A') is true ");
+    console.assert(10 === sum([1,2,3,4]),"Expected output of sum([1,2,3,4]) is 10 ");
+    console.assert(24 === mul([1,2,3,4]),"Expected output of multiply([1,2,3,4]) is 24");
+    console.assert("kohsa" === reverseString("ashok"), "Expected output of strReverse('ashok') is kohsa ");
+    console.assert(8===  findLongestWord(strArray1),"Expected output of findLongestWord(['Ashok', 'Lama', 'Ramshing', 'Rai']) is 8");
+
+    /* jsfiddle code using map/filter/reduce */
+    const a = [1,3,5,3,3];
+    console.log(a.map(i => i*10).toString());
+    console.log(a.filter(i => i === 3).toString());
+    console.log(a.reduce((prevValue,currentValue) => prevValue*currentValue));
+  </script>
+</head>
+<body>
+
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J <br/>
+Or on Firefox with CTRL_SHIFT_K
+
+</body>
+</html>

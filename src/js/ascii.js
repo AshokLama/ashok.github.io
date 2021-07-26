@@ -19,7 +19,7 @@ function start() {
 function stop(time) {
     stopButton.disabled = true;
     startButton.disabled = false;
-    clearTimeout(timer);
+    clearTimeout(time);
     getFrames();
 }
 

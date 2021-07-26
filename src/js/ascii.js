@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 var textArea, animDdl, sizeDdl, timer, startButton, stopButton, speed = 250, turboChk;
 
 function start() {

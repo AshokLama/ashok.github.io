@@ -14,9 +14,7 @@ body {
 
 .fixed-header{
     width: 100%;
-    position: fixed;
     background-color: rgb(181, 157, 156);
-    height: 28vh;
 
 }
 .desc{
@@ -33,7 +31,8 @@ color:blue;
 } */
 .sidebar{
     display: flex;
-    padding-top: 15%;
+    padding-top: 1%;
+    padding-bottom: 15%;
     width: 100%;
 
 }

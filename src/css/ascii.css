@@ -21,7 +21,7 @@ legend {
     text-align: left;
 }
 article{
-    alignment-adjust:auto;
+    alignment-adjust:middle;
 }
 button{
     width: 47%;

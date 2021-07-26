@@ -71,6 +71,7 @@ p{
     font-family:"Times New Roman";
     text-align: left;
     line-height: 25px;
+    box-sizing: border-box;
 }
 p::first-letter {
     color: green;

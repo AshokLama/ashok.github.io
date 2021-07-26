@@ -90,8 +90,8 @@ p::first-letter {
 
 }
 @media screen and (min-width: 600px) {
-    #leftBar {
-        width: 200px;
+    body{
+        width: 100%;
         float: left;
     }
 

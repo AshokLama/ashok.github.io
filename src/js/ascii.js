@@ -14,7 +14,7 @@ function start() {
     })();
     stopButton.disabled = false;
     startButton.disabled = true;
-};
+}
 
 function stop(time) {
     stopButton.disabled = true;
@@ -59,4 +59,4 @@ window.onload = function () {
     sizeDdl.onchange = setSize;
     turboChk.onchange = turbo;
 
-}
+};

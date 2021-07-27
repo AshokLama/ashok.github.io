@@ -1,47 +1,24 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mocha Tests</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D1 - Mocha(functional programming)</title>
+
+    <!-- mocha cdn ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
-    <script src="../js/functional.js"></script>
-    <script>
-        // initialize mocha
-        mocha.setup('bdd');
-        let assert = chai.assert;
-    </script>
-    <script>
-        describe("sum", function () {
-            it("takes 2 numbers, and returns the sum",
-                function () {
-                    assert.equal(5, sum(2,3));
-                });
-        });
-        describe("multiply", function () {
-            it("takes 2 numbers, and returns the product",
-                function () {
-                    assert.equal(6, mul(2,3));
-                });
-        });
-        describe("longerThanN", function () {
-            it("takes an array of string and returns the string that has length greater than 7",
-                function () {
-                    assert.deepEqual(['aeroplane','hippopotamus'], longerThanN(['asdf', 'aeroplane', 'ball', 'hippopotamus'], 7));
-                });
-        });
-        describe("reverseString", function () {
-            it("reverse the given string",
-                function () {
-                    assert.equal('dlroW olleH', reverseString('Hello World'));
-                });
-        });
+    <!-- mocha cdn ------>
 
-    </script>
+    <script src="../js/functional.js" type="text/javascript" ></script>
+
 </head>
 <body>
+
 <div id="mocha"></div>
-<script>
-    mocha.run();
-</script>
+
 </body>
 </html>

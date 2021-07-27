@@ -10,28 +10,54 @@ function mul(arr) {
 
 /* string reverse*/
 function reverseString(str) {
-    return str.split("").reverse().join("");
+    return str.split("").reverse().reduce((ch1, ch2) => {
+        return ch1 + ch2;
+    });
 }
 
-/*find length of longest word*/
-function findLongestWord(words) {
-    let maxLength = 0;
 
-    for (const i in words) {
-        maxLength = max(maxLength, words[i].length);
-    }
-    return maxLength;
+/*finding long words than given length*/
+function filterLongWords(arr, i) {
+    return arr.filter((str) => {
+        return str.length > i;
+    });
 }
 
-/*Q7finding long words than given length*/
-function filterLongWords(words, length) {
-    const longWords = [];
-    let j = 0;
-    for (const i in words) {
-        if (words[i].length > length) {
-            longWords[j] = words[i];
-            j++
-        }
-    }
-    return longWords;
-}
+
+window.onload = () => {
+
+    // initialize mocha
+    mocha.setup('bdd');
+    let assert = chai.assert;
+
+    describe("Sum", function () {
+        it("takes an array of numbers, and returns the sum of all the numbers",
+            function () {
+                assert.equal(10, sum([1, 2, 3, 4]));
+            });
+    });
+
+    describe("Multiply", function () {
+        it("takes an array of numbers, and returns the product of all the numbers",
+            function () {
+                assert.equal(24, mul([1, 2, 3, 4]));
+            });
+    });
+
+    describe("ReverseAString", function () {
+        it("takes a string, and returns the reverse of it",
+            function () {
+                assert.equal("kohsa", reverseString("ashok"));
+            });
+    });
+
+    describe("FilterLongWords", function () {
+        it("takes array of string, and a filter number, and returns words that length are greater than the input",
+            function () {
+                assert.equal(["Ashok", "RamKumar"].toString(), filterLongWords(["Ashok", "Max", "RamKumar"], 4).toString());
+            });
+    });
+
+    mocha.run();
+
+};

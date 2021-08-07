@@ -1,7 +1,7 @@
 const express = require('express');
-const session = require('express-session');
 const url = require('url');
 const path = require('path');
+const session = require('express-session');
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
@@ -37,6 +37,6 @@ app.get('/output', function (req, res) {
     res.send(view);
 });
 
-app.listen(3000, () => {
-    console.log('Your Server is running on 3000');
+app.listen(80, () => {
+    console.log('Your Server is running on 80');
 });

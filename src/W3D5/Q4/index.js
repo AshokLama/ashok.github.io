@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/result', (req, res) => {
-    req.session[req.body.age] = 'Name: ' + req.body.name + ' Age: ' + req.body.age;
+    req.session[req.body.key] = 'Name: ' + req.body.name + ' Age: ' + req.body.age;
 
     res.redirect(url.format({
         pathname: "/output"

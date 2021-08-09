@@ -25,12 +25,3 @@ app.post('/result', (req, res) => {
     })
 });
 app.listen(3000);
-
-
-
-
-
-
-
-
-

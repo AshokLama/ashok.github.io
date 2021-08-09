@@ -14,8 +14,8 @@ const products = [
     { id: 2, name: 'Laptop', description: 'Hp', price: 50000 },
     { id: 3, name: 'Computer', description: 'Dell', price: 60000 }]
 
-const cart =[ { id: 1, name: 'Mobile', description: 'iPhone', price: 40000 },
-    { id: 2, name: 'Laptop', description: 'Hp', price: 50000 }];
+const cart =[ { id: 1, name: 'Mobile', description: 'iPhone', price: 40000,quantity:10 },
+    { id: 2, name: 'Laptop', description: 'Hp', price: 50000,quantity:20 }];
 
 app.get('/products', (req, res) => {
     res.render("Products", {products : products});
@@ -28,17 +28,8 @@ app.post('/addToCart', (req, res) => {
     res.redirect(303, "products");
 
 });
-app.get('/myCart', (req, res) => {
-    res.render("myCart", {cart : cart});
+app.get('/shoppingcart', (req, res) => {
+    res.render("shoppingcart", {cart : cart});
 
 });
 app.listen(3000);
-
-
-
-
-
-
-
-
-

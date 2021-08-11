@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <title> W3D6 </title>
+</head>
+<body>
+
+<!--<div>-->
+<%- include('header')%>
+<p id="title">
+    <span>Product List</span>
+</p>
+<a href="/shoppingCart">
+    <div id="cart" style="text-align: right">
+        <p>Total Items in the cart <span id="count"><%= count%></span></p>
+    </div>
+</a>
+<div id="table">
+    <table border="1px solid black" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <% for(let i=0; i < prods.length; i++) { %>
+            <tr>
+                <td><%= prods[i].name %></td>
+                <td><%= prods[i].price %></td>
+                <td><%= prods[i].description %></td>
+                <form class="addToCart">
+                    <input type="hidden" name="id" value="<%= prods[i].id %>"/>
+                    <td><button type="submit">Add to cart</button></td>
+                </form>
+            </tr>
+        <%}%>
+    </table>
+</div>
+<%- include('footer')%>
+<!--    </div>-->
+</body>
+</html>
